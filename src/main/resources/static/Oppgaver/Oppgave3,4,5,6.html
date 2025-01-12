@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 3</title>
+</head>
+<body>
+<label for="inn">Skrive ditt navn : </label>
+<input type="text" onchange="visNavn(this.value)" id="inn"/>
+
+<script type="application/javascript">
+
+    function visNavn(value){
+      document.write(`<span style="color: blue; font-size:20px;"> Ditt navn er ${value}</span>`);
+      let upperCaseValue = value.toUpperCase();
+      alert("Ditt navn er " +upperCaseValue);
+    console.log("Ditt navn er " + value);
+  }
+
+
+
+</script>
+
+
+</body>
+</html>
